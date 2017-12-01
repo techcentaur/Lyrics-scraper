@@ -6,8 +6,13 @@ API to extract lyrics from www.azlyrics.com through web-scraping, beautifulSoup 
 1. `get_lyrics(singer,song)`:
 input 	- singer: name of the singer
 	- song	: name of the song
-output 	- text file (singer_song.txt) containing lyrics without any extra lexical notations or tags 
-2. `details_input()`: 
+output 	- returns a list of words, essentially the lyrics without any extra lexical notations or tags 
+
+2. `write_infile(lyrics,singer,song)`:
+input - takes the list of words in lyrics, singer and song
+output - writes the list of words into a file named "singer_song.txt", syantactically correct.
+
+3. `details_input()`: 
 //this is just supportive method, invoking this begins the main function
 
 # Usage
