@@ -14,6 +14,7 @@ output - writes the list of words into a file named "singer_song.txt", syantacti
 
 3. `details_input()`: 
 //this is just supportive method, invoking this begins the main function
+it returns a list with singer at first index and song at the second index
 
 # Usage
 

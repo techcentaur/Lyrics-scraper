@@ -26,8 +26,10 @@ def details_input():
     song = input("enter song name :")
     lyrics = get_lyrics(singer,song)
     write_infile(lyrics,singer,song)
+    return [singer,song]
 
 if __name__ == "__main__":
-    details_input()
+    s = details_input()
+    print("Lyrics of "+s[1]+" by "+s[0]+" is downloaded and saved in a file named as "+s[0]+"_"+s[1]+".txt")
 
 #This code is contributed by techcentaur
