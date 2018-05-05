@@ -1,29 +1,24 @@
-# Lyrics API of www.azlyrics.com
-API to extract lyrics from www.azlyrics.com through web-scraping, beautifulSoup and similar python modules
+# Lyrics scraper
+Scrapes the lyrics of songs.
 
+## Usage
 
-# Functions-Analysis
-1. `get_lyrics(singer,song)`:
-input 	- singer: name of the singer
-	- song	: name of the song
-output 	- returns a list of words, essentially the lyrics without any extra lexical notations or tags 
+#### Terminal Usage
 
-2. `write_infile(lyrics,singer,song)`:
-input - takes the list of words in lyrics, singer and song
-output - writes the list of words into a file named "singer_song.txt", syantactically correct.
+```console
+gavy42@jarvis:~/Lyrics-scraper$ python3 lyrics.py 
+[?] Enter song: Red 
+[?] Enter singer: Taylor Swift
 
-3. `details_input()`: 
-//this is just supportive method, invoking this begins the main function
-it returns a list with singer at first index and song at the second index
+[*] Scraping off lyrics...
 
-# Usage
-
-1. Run the file as
+[*] Lyrics is stored in file with name red.txt
 ```
-> python LyricsAPI.py
-```
-in python(version 3.x) environment
-2. Ouput will be a text file in the same directory with name as
-```
-> singer_song.txt
-```
+
+#### Methods
+
+After instatiating the object of the class Scraper, with arguments as song name and singer name in order, these methods can be banged - 
+- `get_lyrics()`: Returns lyrics by scraping the song on web.
+
+- `write_infile(lyrics)`: Writes the lyrics in a file and store it in same directory.
+
